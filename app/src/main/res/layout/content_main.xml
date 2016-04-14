@@ -13,53 +13,55 @@
     tools:showIn="@layout/activity_main">
 
     <TextView
+        android:id="@+id/remain_string"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Remaining Balance"
-        android:id="@+id/remain_string"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="36sp"
-        android:layout_marginTop="54dp" />
+        android:layout_marginTop="90dp"
+        android:text="Remaining Balance"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="36sp" />
 
     <TextView
+        android:id="@+id/remain_money"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="0.00"
-        android:id="@+id/remain_money"
         android:layout_below="@+id/remain_string"
         android:layout_centerHorizontal="true"
-        android:textSize="48sp"
-        android:layout_marginTop="18dp" />
+        android:layout_marginTop="18dp"
+        android:text="0.00"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="48sp" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
         android:id="@+id/adder"
-        android:layout_marginBottom="62dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/spent_string" />
+        android:layout_alignStart="@+id/spent_string"
+        android:layout_marginBottom="59dp"
+        android:ems="10"
+        android:inputType="number" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Spent"
         android:id="@+id/spent_string"
-        android:layout_below="@+id/remain_money"
-        android:layout_alignStart="@+id/remain_string"
-        android:textSize="24sp"/>
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/remain_string"
+        android:layout_below="@+id/remain_money"
+        android:layout_marginTop="22dp"
+        android:text="Spent"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="0.00"
+        android:textSize="18sp" />
+
+    <TextView
         android:id="@+id/spent_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/spent_string"
-        android:layout_alignEnd="@+id/remain_string" />
+        android:layout_alignEnd="@+id/remain_string"
+        android:text="0.00"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18sp" />
 </RelativeLayout>

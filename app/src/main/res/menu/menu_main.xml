@@ -7,4 +7,9 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/set_value"
+        android:orderInCategory="100"
+        android:title="Set Maximum Value"
+        app:showAsAction="never" />
 </menu>
