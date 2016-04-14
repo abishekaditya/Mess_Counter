@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
-        if (ed.getText().toString().matches("")) {
+        if (ed.getText().toString().matches("") || ((total - spent < 0))) {
             Snackbar.make(v, "Enter a Value", Snackbar.LENGTH_LONG).show();
         } else {
             SharedPreferences.Editor editor = sharp.edit();

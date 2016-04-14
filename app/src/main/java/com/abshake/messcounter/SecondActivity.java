@@ -30,6 +30,8 @@ public class SecondActivity extends AppCompatActivity {
         edits.putFloat("total", MainActivity.total);
         edits.apply();
         Intent intent = new Intent(SecondActivity.this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivityForResult(intent, 0);
 
     }
